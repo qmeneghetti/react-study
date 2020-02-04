@@ -1,15 +1,21 @@
-// crear variables
+// Scope
 
-// variables con var
-//var aprendiendo = 'JavaScript';
-//aprendiendo = true;
+// var musica = 'Rock';
 
-// variable con const
-//const aprendiendo = 'JavaScript';
-//aprendiendo = true;
+// if(musica){
+//     var musica = 'Deep House';
+//     console.log('dentro del if: ', musica);
+// }
 
-// variables con Let
-let aprendiendo = 'JavaScript';
-aprendiendo = true;
+// console.log('fuera del if: ',musica);
 
-console.log(aprendiendo);
+// scope con Let
+
+let musica = 'Rock';
+
+if(musica){
+    let musica = 'Deep House';
+    console.log('dentro del if: ', musica);
+}
+
+console.log('fuera del if: ',musica);
