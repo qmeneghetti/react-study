@@ -1,21 +1,24 @@
-// Scope
+// Template Strings
 
-// var musica = 'Rock';
+const nombre = 'Quetzal';
+const trabajo = 'Desarrollador Web';
 
-// if(musica){
-//     var musica = 'Deep House';
-//     console.log('dentro del if: ', musica);
-// }
+// concatenar JS
+console.log('Nombre: ' + nombre + ', Trabajo: ' + trabajo);
+console.log(`Nombre: ${nombre}, Trabajo: ${trabajo}`);
 
-// console.log('fuera del if: ',musica);
+// concatenar multiples lineas
+const contenedorApp = document.querySelector('#app');
+// let html = '<ul>' +
+//                 '<li> Nombre: ' + nombre + '</li>' +
+//                 '<li> Trabajo: ' + trabajo + '</li>' +
+//             '</ul>';
 
-// scope con Let
-
-let musica = 'Rock';
-
-if(musica){
-    let musica = 'Deep House';
-    console.log('dentro del if: ', musica);
-}
-
-console.log('fuera del if: ',musica);
+let html = `
+        <ul>
+            <li> Nombre: ${nombre} </li>
+            <li> Trabajo: ${trabajo} </li>
+        </ul>
+    `;
+    
+contenedorApp.innerHTML = html;
