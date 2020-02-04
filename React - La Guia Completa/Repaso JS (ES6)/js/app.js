@@ -1,24 +1,22 @@
-// Template Strings
+// creando una func
 
-const nombre = 'Quetzal';
-const trabajo = 'Desarrollador Web';
+// Function Declaration
+// function saludar(nombre){
+//     console.log(`Bienvenido ${nombre}`);
+// }
 
-// concatenar JS
-console.log('Nombre: ' + nombre + ', Trabajo: ' + trabajo);
-console.log(`Nombre: ${nombre}, Trabajo: ${trabajo}`);
+// saludar('Juan');
 
-// concatenar multiples lineas
-const contenedorApp = document.querySelector('#app');
-// let html = '<ul>' +
-//                 '<li> Nombre: ' + nombre + '</li>' +
-//                 '<li> Trabajo: ' + trabajo + '</li>' +
-//             '</ul>';
+// function saludar(){
+//     console.log(`Bienvenido`);
+// }
 
-let html = `
-        <ul>
-            <li> Nombre: ${nombre} </li>
-            <li> Trabajo: ${trabajo} </li>
-        </ul>
-    `;
-    
-contenedorApp.innerHTML = html;
+// saludar();
+
+//Function Expression
+const cliente = function(nombre) {
+    console.log(`Mostrando datos del cliente ${nombre}`);
+}
+
+cliente('Juan');
+
